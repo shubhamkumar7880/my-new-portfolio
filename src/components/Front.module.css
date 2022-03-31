@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat&family=Roboto&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.first,
+.one {
+  /* font-family: "Luxurious Roman", cursive; */
+  font-family: "The Nautigal", cursive;
+  font-size: 80px;
+  font-weight: 100;
+  color: #deb887;
+  animation: fadeIn 3s;
+}
+.one {
+  color: coral;
+}
+.second {
+  /* font-family: "Roboto Mono", monospace; */
+  /* font-family: "Luxurious Roman", cursive; */
+  font-family: "Roboto Slab", serif;
+  font-size: 80px;
+  font-weight: 500;
+  animation: moving 2s;
+}
+.contact,
+.touch {
+  float: right;
+  margin-right: 20px;
+  display: flex;
+}
+.mail,
+.email {
+  margin-left: 20px;
+  display: flex;
+}
+.icon {
+  margin-right: 5px;
+}
+.wa {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  cursor: pointer;
+  background: none;
+
+  border: 0;
+  color: white;
+}
+.what {
+  background-color: #25d366;
+  border-radius: 50%;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact a,
+.touch a {
+  color: white;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 600;
+}
+.touch a {
+  color: black;
+}
+.mail a,
+.email a {
+  color: white;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 600;
+}
+.email a {
+  color: black;
+}
+
+.third,
+.three {
+  /* font-family: "Luxurious Roman", cursive; */
+  font-family: "The Nautigal", cursive;
+  color: #deb887;
+  font-size: 60px;
+  animation: lefty 2s;
+}
+.three {
+  color: coral;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+.img {
+  margin: 50px;
+  animation: righty 2s;
+}
+.pic,
+.photo {
+  border: solid burlywood 5px;
+  border-radius: 50%;
+  width: 90%;
+  cursor: pointer;
+  transition: transform 300ms ease;
+}
+.photo {
+  border: solid coral 5px;
+}
+.pic:hover,
+.photo:hover {
+  transform: scale(1.05) rotate(0.1deg);
+}
+
+.projects,
+.project {
+  margin: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: #deb887;
+  font-weight: 500;
+  text-align: center;
+}
+.project {
+  color: coral;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moving {
+  from {
+    transform: translateY(-300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes lefty {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes righty {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.menu {
+  margin: 3%;
+  font-family: "Ubuntu", sans-serif;
+  color: #ff7f50;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-around;
+}
+
+.active,
+.present {
+  background-color: #22395d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 250px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #deb887 solid 5px;
+  cursor: pointer;
+}
+.present {
+  background-color: rgb(247, 243, 243);
+  border-bottom: coral solid 5px;
+}
+
+.unactive,
+.unpresent {
+  background-color: #22395d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 350px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: #deb887 solid 5px;
+  cursor: pointer;
+}
+.unpresent {
+  background-color: rgb(247, 243, 243);
+  border-bottom: coral solid 5px;
+}
+
+@media only screen and (max-width: 550px) {
+  .contact,
+  .touch {
+    float: none;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    display: block;
+  }
+  .mail,
+  .email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .body {
+    display: block;
+    margin: 5%;
+  }
+  .first,
+  .one {
+    font-size: 55px;
+    text-align: center;
+  }
+  .second {
+    font-size: 50px;
+    text-align: center;
+  }
+  .third,
+  .three {
+    font-size: 50px;
+    text-align: center;
+  }
+  .projects,
+  .project {
+    font-size: 15px;
+  }
+  .active,
+  .present {
+    width: 130px;
+    height: 50px;
+  }
+  .unactive,
+  .unpresent {
+    width: 130px;
+    height: 50px;
+  }
+  .menu h1 {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 445px) and (max-width: 530px) {
+  .menu h1 {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+  .menu h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 950px) {
+  .first,
+  .one {
+    font-size: 60px;
+  }
+  .second {
+    font-size: 50px;
+  }
+  .third,
+  .three {
+    font-size: 50px;
+  }
+  .menu h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 630px) and (max-width: 800px) {
+  .pic,
+  .photo {
+    width: 70%;
+  }
+  .img {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects,
+  .project {
+    font-size: 20px;
+  }
+}

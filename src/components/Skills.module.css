@@ -1,0 +1,114 @@
+.container,
+.box {
+  padding-top: 20px;
+  background-color: #22395d;
+  font-family: "Montserrat", sans-serif;
+}
+.box {
+  background-color: rgb(247, 243, 243);
+}
+.container h1,
+.box h1 {
+  font-size: 40px;
+  color: #deb887;
+  text-align: center;
+}
+.box h1 {
+  color: coral;
+}
+.skills {
+  margin-top: 80px;
+  display: flex;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+.image img {
+  width: 400px;
+}
+.second {
+  display: flex;
+  margin-top: 70px;
+}
+.skill {
+  width: 80px;
+  height: 20px;
+  background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-right: 50px;
+}
+.wp {
+  width: 80px;
+  height: 20px;
+  background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+  color: black;
+  padding: 10px;
+  opacity: 0;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-right: 50px;
+}
+.wp span {
+  font-weight: 600;
+}
+.skill span {
+  font-weight: 600;
+}
+@media only screen and (max-width: 850px) {
+  .container,
+  .box {
+    padding-bottom: 50px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .image img {
+    display: none;
+  }
+  .container h1,
+  .box h1 {
+    font-size: 30px;
+  }
+  .right {
+    margin-right: 17px;
+  }
+
+  .skill span {
+    font-size: 12px;
+  }
+  .margin {
+    margin: 0;
+  }
+  /* .center {
+    margin-left: 30px;
+  } */
+}
+@media only screen and (min-width: 425px) and (max-width: 850px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right {
+    margin-right: 45px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .skill {
+    height: 27px;
+  }
+  .skill span {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}

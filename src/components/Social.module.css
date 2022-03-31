@@ -1,0 +1,136 @@
+.container {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.container h1 {
+  font-size: 40px;
+}
+.container h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+}
+.connect {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.media {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.social {
+  margin-right: 20px;
+  padding: 5px 30px 5px 30px;
+  color: #22395d;
+  background-color: bisque;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  border: white solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.social:hover {
+  background-color: burlywood;
+}
+@media only screen and (max-width: 950px) {
+  .container {
+    margin-left: 0px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container h2 {
+    font-size: 20px;
+  }
+  .connect {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .social {
+    margin-right: 0px;
+    padding: 5px 20px 5px 20px;
+
+    margin-bottom: 20px;
+
+    width: 200px;
+
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 650px) {
+  .social {
+    width: 250px;
+
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 651px) and (max-width: 850px) {
+  .social {
+    width: 300px;
+
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 851px) and (max-width: 950px) {
+  .social {
+    width: 350px;
+
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1250px) {
+  .container {
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+  .container h1 {
+    font-size: 35px;
+  }
+  .container h2 {
+    font-size: 25px;
+  }
+  .connect {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .media {
+    display: flex;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .social {
+    margin-right: 20px;
+    padding: 5px 30px 5px 30px;
+
+    width: 200px;
+    height: 45px;
+  }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1250px) {
+  .social {
+    width: 230px;
+    height: 47px;
+  }
+}

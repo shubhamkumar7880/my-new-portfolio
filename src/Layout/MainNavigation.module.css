@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto&family=The+Nautigal:wght@700&display=swap");
+
+.header,
+.day {
+  width: 100%;
+  height: 5rem;
+  background-color: #6b5b95;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+.day {
+  background-color: #f7cac9;
+}
+.body {
+  margin-right: 17.5%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.logo {
+  font-family: "The Nautigal", cursive;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #ff7f50;
+
+  margin: 0;
+}
+.show {
+  display: none;
+}
+.header a,
+.day a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.day a {
+  color: black;
+}
+.header span,
+.day span {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.day span {
+  color: black;
+}
+.header ul,
+.day ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+}
+.header li,
+.day li {
+  margin: 15px;
+}
+.header nav,
+.day nav {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: -8%;
+}
+.header a:hover {
+  color: #92a8d1;
+}
+.day a:hover {
+  color: rgb(150, 35, 35);
+}
+
+/* CSS */
+
+.button {
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.icon:hover {
+  color: rgb(219, 210, 210);
+}
+.night {
+  color: black;
+}
+.night:hover {
+  color: rgb(46, 46, 46);
+}
+
+@media only screen and (max-width: 850px) {
+  .show {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    font-size: 2rem;
+  }
+  .list {
+    opacity: 1;
+
+    transition: 0.5s;
+  }
+  .unlist {
+    opacity: 0;
+    transform: translateY(-320px);
+    transition: 0.5s;
+  }
+
+  .header ul,
+  .day ul {
+    display: block;
+
+    position: absolute;
+    width: 100%;
+
+    background-color: #6b5b95;
+    top: 75px;
+    right: 0;
+
+    z-index: 2;
+  }
+
+  .header ul li,
+  .day ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .day ul {
+    background-color: #f7cac9;
+  }
+  .body {
+    margin-right: 16.7%;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 849px) {
+  .logo {
+    position: absolute;
+    top: 25px;
+    font-size: 3rem;
+  }
+}

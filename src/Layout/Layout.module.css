@@ -1,0 +1,12 @@
+.body,
+.day {
+  background-color: #1c2e4a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.day {
+  background-color: white;
+  color: black;
+}

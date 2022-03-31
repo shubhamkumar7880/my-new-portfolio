@@ -1,0 +1,9 @@
+.bottom {
+  margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .bottom {
+    margin-bottom: 0px;
+  }
+}

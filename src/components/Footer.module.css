@@ -1,0 +1,65 @@
+.body,
+.box {
+  background-color: #22395d;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  padding-right: 35px;
+}
+.box {
+  background-color: rgb(247, 243, 243);
+}
+.body h1,
+.box h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #deb887;
+}
+.box h1 {
+  color: coral;
+}
+.body button,
+.box button {
+  background-color: bisque;
+  padding: 15px;
+  float: right;
+  border: 2px white solid;
+  border-radius: 10px;
+  margin-top: -70px;
+  cursor: pointer;
+}
+.body span,
+.box span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+}
+.body button:hover {
+  background-color: #deb887;
+}
+.box button:hover {
+  background-color: #deb887;
+}
+@media only screen and (max-width: 800px) {
+  .body h1,
+  .box h1 {
+    text-align: center;
+
+    font-size: 30px;
+  }
+  .body button,
+  .box button {
+    padding: 5px;
+
+    float: none;
+    border: 2px white solid;
+    border-radius: 5px;
+    margin-top: 0px;
+  }
+  .body,
+  .box {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 0px;
+  }
+}
