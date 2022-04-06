@@ -70,7 +70,7 @@ const Front = (props) => {
         <div className={classes.title}>
           <ReactWhatsapp
             number="+918210019718"
-            message="Hello Sir!!!"
+            message="Hello!"
             className={classes.wa}
           >
             <BsWhatsapp size="4em" className={classes.what} />
